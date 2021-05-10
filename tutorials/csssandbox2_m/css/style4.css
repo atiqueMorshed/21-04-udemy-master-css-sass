@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+}
+
+.box {
+  padding: 1rem;
+  margin: 1rem;
+  background: rgb(100, 114, 240);
+  color: white;
+
+  /* offset-x | offset-y | color */
+  box-shadow: 10px 10px rgb(175, 91, 91);
+
+  /* offset-x | offset-y | blur-radius | color  */
+  box-shadow: 5px 5px 20px rgb(175, 91, 91);
+
+  /* Negative value for top and left direction */
+  box-shadow: -5px -5px 20px rgb(175, 91, 91);
+  /* inset offset-x | offset-y | color */
+  box-shadow: inset 10px 10px rgb(175, 91, 91);
+
+  /* offset-x | offset-y | blur-radius | spread-radius | color  */
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+
+  /* Multiple */
+  box-shadow: 3px 3px teal, -3px -3px olive;
+}

@@ -1,0 +1,37 @@
+* {
+    /* when we add extra padding, it does not add to the actual width. It keeps the width of element same by resizing inside elements */
+    box-sizing: border-box; 
+}
+#box-1 {
+    background-color: hsl(0, 0%, 75%);
+    /* border-width: 3px;
+    border-color: red;
+    border-style: solid; */
+
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#box-2 {
+    background: hsl(0, 0%, 20%);
+    border-top: 3px solid red;
+    border-top-left-radius: 10px;
+}
+
+#box-3 {
+    color: white;
+    height: 300px;
+    width: 600px;
+
+    /* background-image: url('../img/stars.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover; */
+    background: url("../img/stars.jpg") no-repeat center center/cover;
+}
+
+#box-4 {
+    background: url("../img/leaf.png") no-repeat center center;
+    background-attachment: fixed;
+}

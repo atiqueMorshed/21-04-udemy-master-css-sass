@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/31dda91769.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Post | Ultimate Finantial Assistance | FinAssist</title>
+</head>
+<body id="home">
+    <div class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo"><span class="text-primary"><i class="fas fa-book-open"></i>Fin</span>Assist</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </div>
+    <main>
+        <section class="post">
+            <h2>Blog Post One</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>John Doe</strong> | April 26, 2021
+            </p>
+            <img src="img/blog/blog1.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores officiis non porro voluptatum laborum blanditiis, voluptates quos quaerat perspiciatis molestiae fugiat itaque, soluta qui atque accusantium odio. Impedit, placeat veniam?
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam dolore voluptatibus at eveniet, asperiores facere eligendi quaerat nobis, saepe magni dolorem. Animi voluptas a tempore perspiciatis, quia consequuntur deserunt illo, cum quisquam eaque quibusdam facere. Dignissimos libero, aperiam quibusdam quidem soluta cupiditate quisquam ipsum sequi optio omnis possimus suscipit repellendus laboriosam sapiente. Facilis asperiores quo, necessitatibus placeat ullam maiores accusantium.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus molestiae nostrum, animi dolor nam exercitationem ducimus quasi. Saepe, quasi mollitia cumque exercitationem iure, alias tempore laboriosam harum ad sunt autem et, vel rerum velit? Vel quas assumenda sequi voluptatum sint repudiandae cum recusandae. Similique, impedit at. Iste delectus fugit reiciendis!
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2021 FinAssist</p>
+    </footer>
+    
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+        window.onscroll = () => {
+            if(window.pageYOffset > 100) { // When we go down Y axis by 100 px
+                navbar.classList.remove('top');
+                if(!scrolled) {
+                    navbar.style.transform = "translateY(-70px)";
+                }
+                setTimeout(()=> {
+                    navbar.style.transform = "translateY(0px)";
+                    scrolled = true;
+                }, 200);
+            }
+            else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        }
+    </script>
+</body>
+</html>

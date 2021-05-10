@@ -1,0 +1,31 @@
+/* Direct Child */
+div > p {
+  background: #ddd;
+}
+
+/* Next Sibling */
+/* Directly After */
+/* Here, the P directly after div (Not child but sibling) */
+div + p {
+  background: #333;
+  color: white;
+}
+
+/* Select Element By Attribute */
+a[target] {
+  background: red;
+  color: white;
+}
+
+/* Select Element By Attribute with specific value*/
+a[target="_blank"] {
+  background: green;
+  color: blue;
+}
+
+/* Specific  Attribute Values*/
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  margin-bottom: 5px;
+}

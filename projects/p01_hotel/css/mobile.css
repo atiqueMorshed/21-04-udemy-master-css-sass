@@ -1,0 +1,93 @@
+/* Utility Classes */
+.container {
+    padding: 0;
+}
+
+.box {
+    float: none;
+    width: 100%;
+}
+
+#navbar h1 {
+    float: none;
+    text-align: center;
+}
+
+#navbar ul {
+    float: none;
+}
+
+#navbar ul li {
+    float: none;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dotted #444;
+}
+
+#navbar ul li:last-child {
+    border: none;
+}
+
+#navbar ul li a {
+    padding: 10px;
+    width:  100%;
+}
+
+/* Showcase */
+.showcase .container .showcase-container {
+    padding-top: 50px;
+}
+
+.showcase .container .showcase-container .btn {
+    margin-bottom: 20px;
+}
+
+
+/* Home Information */
+.home-info .info-img {
+    float: none;
+    display: none;
+}
+
+.home-info .info-content {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* About */
+.about-info .info-left {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-info .info-right {
+    float: none;
+    width: 100%;
+    min-height: 100%;
+}
+
+.testimonials .testimonial {
+    margin: 0 5vw 10vh;
+}
+
+/* Contact */
+.contact-info .box {
+    border: 1px dotted #444;
+}
+
+.contact-info .box:last-child {
+    border: none;
+}
+
+.contact-form h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+.contact-form p {
+    text-align: center;
+}

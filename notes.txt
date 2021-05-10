@@ -1,0 +1,17 @@
+ * {box-sizing: border-box; }
+If we have a container with width 50px and padding of 10px, the total width would be 60px.
+but if we apply THIS, then padding will be contained within the container.
+
+Circular Image ->
+clip-path: circle();
+
+flex-container->
+align-items: center/ flex-start/ flex-end/ stretch; [Aligns items with respect to cross axis]
+
+justify-content: center/ flex-start/ flex-end/ space-between/ space-around/ space-evenly; [Aligns items with respect to main axis]
+
+flex-item->
+align-self: [Aligns an INDIVIDUAL ITEM with respect to cross axis]
+
+flex: 1 is equivalent to flex: 1 1 0  [flex-grow, flex-shrink, flex-basis]
+flex: 25% is equivalent to flex: 1 1 25%  [flex-grow, flex-shrink, flex-basis]
